@@ -20,10 +20,21 @@ namespace Fonadin
         {
             var mayores = new Nivel("Mayores");        
             var menores = new Nivel("Menores");
+            menores.subNiveles = new List<Subnivel>();
+            menores.subNiveles.Add(new Subnivel("Construccion"));
+            menores.subNiveles.Add(new Subnivel("Revicion"));
             var lista = new List<Nivel>();
             lista.Add(mayores);
             lista.Add(menores);
+            Console.Write(lista.ToJson());
             return lista;
+        }
+        public BsonDocument save(Nivel nivel)
+        {
+            WriteConcernResult result = collection.Save<Nivel>(nivel);
+            Console.WriteLine("Result de insert");
+            Console.Write(result.Response.ToJson());
+            return result.Response;
         }
     }
 }

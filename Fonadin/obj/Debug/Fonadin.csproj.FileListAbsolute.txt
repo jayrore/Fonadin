@@ -2,3 +2,12 @@ C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\bin\Debug\Fonadin.exe.confi
 C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.csprojResolveAssemblyReference.cache
 C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.Properties.Resources.resources
 C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.csproj.GenerateResource.Cache
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\bin\Debug\Fonadin.exe
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\bin\Debug\Fonadin.pdb
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\bin\Debug\MongoDB.Bson.dll
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\bin\Debug\MongoDB.Driver.dll
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\bin\Debug\MongoDB.Bson.xml
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\bin\Debug\MongoDB.Driver.xml
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.exe
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.pdb
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.Form1.resources
