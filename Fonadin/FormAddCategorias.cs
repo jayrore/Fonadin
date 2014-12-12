@@ -14,10 +14,9 @@ namespace Fonadin
 {
     public partial class FormAddCategorias : Form
     {
-        colNiveles colNiveles;
+        colNiveles colNiveles = new colNiveles();
         public FormAddCategorias()
         {   
-             colNiveles = new colNiveles();
             InitializeComponent();
         }
         private void FormAddCategorias_Load_1(object sender, EventArgs e)
@@ -51,12 +50,14 @@ namespace Fonadin
         {
             BindingList<Nivel> docList = new BindingList<Nivel>();
             var niveles = colNiveles.getNiveles();
-            foreach (Nivel nivel in niveles)
+            foreach (var nivel in niveles)
             {
-                Console.Write(nivel.ToJson<Nivel>());
+                Console.WriteLine(nivel.ToJson<Nivel>());
                 docList.Add(nivel);
             }
             this.dataGridView1.DataSource = docList;
+            this.dataGridView1.Columns[0].Visible = false;
+            
         }
 
     }

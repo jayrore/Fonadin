@@ -12,3 +12,5 @@ C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.exe
 C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.pdb
 C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.Form1.resources
 C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.FormAddCategorias.resources
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.FormAddDelegacion.resources
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.FormAddSubdelegacion.resources

@@ -24,5 +24,19 @@ namespace Fonadin
             FormAddCategorias FormAddCategorias = new FormAddCategorias();
             FormAddCategorias.Show();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormAddDelegacion FormAddDelegacion = new FormAddDelegacion();
+            FormAddDelegacion.Show();
+        }
+
+        private void agregarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FormAddSubdelegacion FormAddSubdelegacion = new FormAddSubdelegacion();
+            FormAddSubdelegacion.Show();
+        }
+
+     
     }
 }

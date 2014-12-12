@@ -50,7 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="colDelegaciones.cs" />
     <Compile Include="colNiveles.cs" />
+    <Compile Include="Delegacion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +65,18 @@
     <Compile Include="FormAddCategorias.Designer.cs">
       <DependentUpon>FormAddCategorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAddDelegacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddDelegacion.Designer.cs">
+      <DependentUpon>FormAddDelegacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddSubdelegacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddSubdelegacion.Designer.cs">
+      <DependentUpon>FormAddSubdelegacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mongo.cs" />
     <Compile Include="Nivel.cs" />
     <Compile Include="Program.cs" />
@@ -73,6 +87,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddCategorias.resx">
       <DependentUpon>FormAddCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddDelegacion.resx">
+      <DependentUpon>FormAddDelegacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddSubdelegacion.resx">
+      <DependentUpon>FormAddSubdelegacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

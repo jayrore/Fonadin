@@ -9,16 +9,14 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace Fonadin
 {
-    class Nivel
+    class Delegacion
     {
         [BsonIgnoreIfNull]
-        public ObjectId _id {get; set; }
+        public ObjectId _id { get; set; }
         //Nombre de el nivel
-        public String nombre {get; set; }
-        
+        public String nombre { get; set; }
+
         [BsonIgnoreIfNull]
-        //Arreglo de sub niveles
-        public List<Subnivel> subNiveles {get; set; }
-        
+        public String[] subdelegaciones { get; set; }
     }
 }

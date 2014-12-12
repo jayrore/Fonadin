@@ -14,20 +14,20 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace Fonadin
 {
-    class colNiveles : Mongo
+    class colDelegaciones : Mongo
     {
         public MongoCollection collection;
-        public colNiveles() : base() {
-
-            collection = this.db.GetCollection("niveles");
+        public colDelegaciones(): base()
+        {
+            collection = this.db.GetCollection("delegaciones");
         }
 
-        public List<Nivel> getNiveles()
+        public List<Delegacion> getAll()
         {
-            MongoCursor<Nivel> cursor;
+            MongoCursor<Delegacion> cursor;
             try
             {
-            cursor = collection.FindAllAs<Nivel>();
+            cursor = collection.FindAllAs<Delegacion>();
             }
             catch (Exception ex)
             {
@@ -38,9 +38,16 @@ namespace Fonadin
             
             return cursor.ToList();
         }
-        public BsonDocument save(Nivel nivel)
+
+        public Delegacion getByNombre(string nombre){
+
+            var query = new QueryDocument("nombre", nombre);
+            var cursor = collection.FindOneAs<Delegacion>(query);
+            return cursor;
+        }
+        public BsonDocument save(Delegacion nivel)
         {
-            WriteConcernResult result = collection.Save<Nivel>(nivel);
+            WriteConcernResult result = collection.Save<Delegacion>(nivel);
             Console.WriteLine("Result de insert");
             Console.Write(result.Response.ToJson());
             return result.Response;
