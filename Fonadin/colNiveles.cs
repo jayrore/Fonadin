@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MongoDB.Driver;
+using MongoDB.Driver.Operations;
 using MongoDB.Bson;
 
 namespace Fonadin
@@ -18,16 +19,21 @@ namespace Fonadin
 
         public List<Nivel> getNiveles()
         {
-            var mayores = new Nivel("Mayores");        
-            var menores = new Nivel("Menores");
-            menores.subNiveles = new List<Subnivel>();
-            menores.subNiveles.Add(new Subnivel("Construccion"));
-            menores.subNiveles.Add(new Subnivel("Revicion"));
-            var lista = new List<Nivel>();
-            lista.Add(mayores);
-            lista.Add(menores);
-            Console.Write(lista.ToJson());
-            return lista;
+            MongoCursor<Nivel> cursor;
+            try
+            {
+            cursor = collection.FindAllAs<Nivel>();
+            Console.Write(cursor.ToJson());
+            Console.WriteLine("Result de getNiveles");
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.Message.ToString());
+                throw;
+            }
+            
+            
+            return cursor.ToList<Nivel>();
         }
         public BsonDocument save(Nivel nivel)
         {

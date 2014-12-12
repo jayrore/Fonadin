@@ -19,8 +19,5 @@ namespace Fonadin
         //Arreglo de sub niveles
         public List<Subnivel> subNiveles {get; set; }
         
-        public Nivel(String nombre){
-            this.nombre = nombre;
-        }
     }
 }

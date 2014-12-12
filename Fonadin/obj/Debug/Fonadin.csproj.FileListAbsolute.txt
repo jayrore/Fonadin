@@ -11,3 +11,4 @@ C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\bin\Debug\MongoDB.Driver.xm
 C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.exe
 C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.pdb
 C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.Form1.resources
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.FormAddCategorias.resources
