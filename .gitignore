@@ -31,8 +31,8 @@ Icon
 # Thumbnails
 ._*
 
-/bin
-/obj
+\bin
+\obj
 
 # Files that might appear on external disk
 .Spotlight-V100
