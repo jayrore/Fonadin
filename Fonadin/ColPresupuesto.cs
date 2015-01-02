@@ -14,36 +14,33 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace Fonadin
 {
-    class colNiveles : Mongo
+    class ColPresupuesto:Mongo
     {
-        public MongoCollection collection;
-        public colNiveles() : base() {
-
-            collection = this.db.GetCollection("niveles");
+        MongoCollection collection;
+        public ColPresupuesto(): base()
+        {
+         collection = this.db.GetCollection("presupuestos");
         }
 
-        public List<Nivel> getNiveles()
+        public void save(Presupuesto autopista) 
         {
-            MongoCursor<Nivel> cursor;
+            collection.Save(autopista);
+        }
+        public List<Presupuesto> getAll()
+        {
+            MongoCursor<Presupuesto> cursor;
             try
             {
-            cursor = collection.FindAllAs<Nivel>();
+                cursor = collection.FindAllAs<Presupuesto>();
             }
             catch (Exception ex)
             {
                 Console.Write(ex.Message.ToString());
                 throw;
             }
-            
-            
+
             return cursor.ToList();
         }
-        public BsonDocument save(Nivel nivel)
-        {
-            WriteConcernResult result = collection.Save<Nivel>(nivel);
-            Console.WriteLine("Result de insert");
-            Console.Write(result.Response.ToJson());
-            return result.Response;
-        }
+
     }
 }

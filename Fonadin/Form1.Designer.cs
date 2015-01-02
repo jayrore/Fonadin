@@ -30,18 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tlHerramientas = new System.Windows.Forms.ToolStrip();
-            this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.subDelegacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.quitarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.subNivelesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.quitarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripDropDownButton3 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.corredoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.autopistasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.programasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.tlHerramientas.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,8 +42,8 @@
             // 
             this.tlHerramientas.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tlHerramientas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripDropDownButton2,
-            this.toolStripDropDownButton1});
+            this.toolStripDropDownButton3,
+            this.toolStripButton1});
             this.tlHerramientas.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.tlHerramientas.Location = new System.Drawing.Point(5, 5);
             this.tlHerramientas.Name = "tlHerramientas";
@@ -58,100 +51,48 @@
             this.tlHerramientas.TabIndex = 4;
             this.tlHerramientas.Text = "toolStrip1";
             // 
-            // toolStripDropDownButton2
+            // toolStripDropDownButton3
             // 
-            this.toolStripDropDownButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2,
-            this.subDelegacionToolStripMenuItem});
-            this.toolStripDropDownButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton2.Image")));
-            this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
-            this.toolStripDropDownButton2.Size = new System.Drawing.Size(106, 20);
-            this.toolStripDropDownButton2.Tag = "Delegaciones";
-            this.toolStripDropDownButton2.Text = "Delegaciones";
+            this.toolStripDropDownButton3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.corredoresToolStripMenuItem,
+            this.autopistasToolStripMenuItem,
+            this.programasToolStripMenuItem});
+            this.toolStripDropDownButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton3.Image")));
+            this.toolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton3.Name = "toolStripDropDownButton3";
+            this.toolStripDropDownButton3.Size = new System.Drawing.Size(89, 20);
+            this.toolStripDropDownButton3.Tag = "Catalogos";
+            this.toolStripDropDownButton3.Text = "Catalogos";
             // 
-            // toolStripMenuItem1
+            // corredoresToolStripMenuItem
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItem1.Text = "Agregar";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            this.corredoresToolStripMenuItem.Name = "corredoresToolStripMenuItem";
+            this.corredoresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.corredoresToolStripMenuItem.Text = "Corredores";
+            this.corredoresToolStripMenuItem.Click += new System.EventHandler(this.corredoresToolStripMenuItem_Click);
             // 
-            // toolStripMenuItem2
+            // autopistasToolStripMenuItem
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(155, 22);
-            this.toolStripMenuItem2.Text = "Quitar";
+            this.autopistasToolStripMenuItem.Name = "autopistasToolStripMenuItem";
+            this.autopistasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.autopistasToolStripMenuItem.Text = "Autopistas";
+            this.autopistasToolStripMenuItem.Click += new System.EventHandler(this.autopistasToolStripMenuItem_Click);
             // 
-            // subDelegacionToolStripMenuItem
+            // programasToolStripMenuItem
             // 
-            this.subDelegacionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agregarToolStripMenuItem2,
-            this.quitarToolStripMenuItem2});
-            this.subDelegacionToolStripMenuItem.Name = "subDelegacionToolStripMenuItem";
-            this.subDelegacionToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
-            this.subDelegacionToolStripMenuItem.Text = "Sub delegacion";
+            this.programasToolStripMenuItem.Name = "programasToolStripMenuItem";
+            this.programasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.programasToolStripMenuItem.Text = "Programas";
+            this.programasToolStripMenuItem.Click += new System.EventHandler(this.programasToolStripMenuItem_Click);
             // 
-            // agregarToolStripMenuItem2
+            // toolStripButton1
             // 
-            this.agregarToolStripMenuItem2.Name = "agregarToolStripMenuItem2";
-            this.agregarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.agregarToolStripMenuItem2.Text = "Agregar";
-            this.agregarToolStripMenuItem2.Click += new System.EventHandler(this.agregarToolStripMenuItem2_Click);
-            // 
-            // quitarToolStripMenuItem2
-            // 
-            this.quitarToolStripMenuItem2.Name = "quitarToolStripMenuItem2";
-            this.quitarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.quitarToolStripMenuItem2.Text = "Quitar";
-            // 
-            // toolStripDropDownButton1
-            // 
-            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agregarToolStripMenuItem,
-            this.quitarToolStripMenuItem,
-            this.subNivelesToolStripMenuItem});
-            this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
-            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(92, 20);
-            this.toolStripDropDownButton1.Tag = "Categorias";
-            this.toolStripDropDownButton1.Text = "Categorias";
-            // 
-            // agregarToolStripMenuItem
-            // 
-            this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.agregarToolStripMenuItem.Text = "Agregar";
-            this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
-            // 
-            // quitarToolStripMenuItem
-            // 
-            this.quitarToolStripMenuItem.Name = "quitarToolStripMenuItem";
-            this.quitarToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.quitarToolStripMenuItem.Text = "Quitar";
-            // 
-            // subNivelesToolStripMenuItem
-            // 
-            this.subNivelesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agregarToolStripMenuItem1,
-            this.quitarToolStripMenuItem1});
-            this.subNivelesToolStripMenuItem.Name = "subNivelesToolStripMenuItem";
-            this.subNivelesToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.subNivelesToolStripMenuItem.Text = "Sub Categorias";
-            // 
-            // agregarToolStripMenuItem1
-            // 
-            this.agregarToolStripMenuItem1.Name = "agregarToolStripMenuItem1";
-            this.agregarToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
-            this.agregarToolStripMenuItem1.Text = "Agregar";
-            // 
-            // quitarToolStripMenuItem1
-            // 
-            this.quitarToolStripMenuItem1.Name = "quitarToolStripMenuItem1";
-            this.quitarToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
-            this.quitarToolStripMenuItem1.Text = "Quitar";
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(92, 20);
+            this.toolStripButton1.Text = "Presupuesto";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // Form1
             // 
@@ -174,18 +115,11 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip tlHerramientas;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
-        private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quitarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem subNivelesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem quitarToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem subDelegacionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem quitarToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton3;
+        private System.Windows.Forms.ToolStripMenuItem corredoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem programasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem autopistasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }
 

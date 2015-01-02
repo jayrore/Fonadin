@@ -19,22 +19,28 @@ namespace Fonadin
             InitializeComponent();
         }
 
-        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void corredoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormAddCategorias FormAddCategorias = new FormAddCategorias();
-            FormAddCategorias.Show();
+            FormAddCorredor FormAddCorredor = new FormAddCorredor();
+            FormAddCorredor.Show();
         }
 
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        private void programasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormAddDelegacion FormAddDelegacion = new FormAddDelegacion();
-            FormAddDelegacion.Show();
+            FormAddPrograma FormAddPrograma = new FormAddPrograma();
+            FormAddPrograma.Show();
         }
 
-        private void agregarToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void autopistasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormAddSubdelegacion FormAddSubdelegacion = new FormAddSubdelegacion();
-            FormAddSubdelegacion.Show();
+            FormAddAutopista FormAddAutopista = new FormAddAutopista();
+            FormAddAutopista.Show();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            FormPresupuesto FormAutopistas = new FormPresupuesto();
+            FormAutopistas.Show();
         }
 
      

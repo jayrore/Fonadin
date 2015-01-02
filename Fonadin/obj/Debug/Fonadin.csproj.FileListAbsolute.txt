@@ -1,5 +1,4 @@
 C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\bin\Debug\Fonadin.exe.config
-C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.csprojResolveAssemblyReference.cache
 C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.Properties.Resources.resources
 C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.csproj.GenerateResource.Cache
 C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\bin\Debug\Fonadin.exe
@@ -11,6 +10,8 @@ C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\bin\Debug\MongoDB.Driver.xm
 C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.exe
 C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.pdb
 C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.Form1.resources
-C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.FormAddCategorias.resources
-C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.FormAddDelegacion.resources
-C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.FormAddSubdelegacion.resources
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.FormAddCorredor.resources
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.FormAddPrograma.resources
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.FormPresupuesto.resources
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.FormAddAutopista.resources
+C:\Users\JAYRO -PC1\Documents\GitHub\Fonadin\Fonadin\obj\Debug\Fonadin.csprojResolveAssemblyReference.cache

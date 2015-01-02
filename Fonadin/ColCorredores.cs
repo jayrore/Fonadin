@@ -14,20 +14,20 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace Fonadin
 {
-    class colDelegaciones : Mongo
+    class ColCorredores : Mongo
     {
         public MongoCollection collection;
-        public colDelegaciones(): base()
+        public ColCorredores(): base()
         {
-            collection = this.db.GetCollection("delegaciones");
+            collection = this.db.GetCollection("corredores");
         }
 
-        public List<Delegacion> getAll()
+        public List<Corredor> getAll()
         {
-            MongoCursor<Delegacion> cursor;
+            MongoCursor<Corredor> cursor;
             try
             {
-            cursor = collection.FindAllAs<Delegacion>();
+            cursor = collection.FindAllAs<Corredor>();
             }
             catch (Exception ex)
             {
@@ -39,18 +39,26 @@ namespace Fonadin
             return cursor.ToList();
         }
 
-        public Delegacion getByNombre(string nombre){
+        public Corredor getByNombre(string nombre){
 
             var query = new QueryDocument("nombre", nombre);
-            var cursor = collection.FindOneAs<Delegacion>(query);
+            var cursor = collection.FindOneAs<Corredor>(query);
             return cursor;
         }
-        public BsonDocument save(Delegacion nivel)
+        public BsonDocument save(Corredor nivel)
         {
-            WriteConcernResult result = collection.Save<Delegacion>(nivel);
+            WriteConcernResult result = collection.Save<Corredor>(nivel);
             Console.WriteLine("Result de insert");
             Console.Write(result.Response.ToJson());
             return result.Response;
+        }
+
+        public bool delete(String corredorName)
+        {
+            WriteConcernResult result;
+
+            result = collection.Remove(Query.EQ("nombre", corredorName));
+            return result.Ok;
         }
     }
 }
